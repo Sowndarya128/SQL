@@ -1,1 +1,20 @@
 
+CREATE DATABASE StudentDB2;
+GO
+
+USE StudentDB2;
+GO
+
+CREATE TABLE student(
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    name VARCHAR(50),
+    email VARCHAR(100)
+);
+GO
+
+INSERT INTO student(name,email)
+VALUES('Sowndarya','sowndaryaraj128@gmail.com');
+GO
+
+SELECT * FROM student;
+GO
